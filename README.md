@@ -2,7 +2,7 @@
 C++ program that reads,writes,modify csv files 
 It returns values in double vector form which can be manipulated according to the need.
 it can be used by making its instance as:
-object1=csvutils;
+csvutils object1;
 
 Below are the available fuctions to do the tasks:
 
