@@ -11,28 +11,24 @@ class utilities{
     protected:
     
     public:
-    vector <int> sorted(vector<string> pujan){
+    vector <int> sorted(vector<string> foo){
         vector<int> var2;
         int temp2;
         int value=0;
         string temp;
-        for (int i=0;i<pujan.size();i++){
+        for (int i=0;i<foo.size();i++){
             var2.push_back(i);
         }
-        for(int i=0;i<pujan.size();++i){
+        for(int i=0;i<foo.size();++i){
             value=i;
-            for (int j=i+1;j<pujan.size();j++){
-                // if (isdigit(pujan[i])){
-                //     pujan[i]=stoi(pujan[i]);
-                //     pujan[j]=stoi(pujan[j]);
-                // }
-                 
-                if (pujan[i]>pujan[j]){
-                    temp=pujan[i];
+            for (int j=i+1;j<foo.size();j++){
+               
+                 foo   if (foo[i]>foo[j]){
+                    temp=foo[i];
                     temp2=var2[i];
-                    pujan[i]=pujan[j];
+                    foo[i]=foo[j];
                     var2[i]=var2[j];
-                    pujan[j]=temp;
+                    foo[j]=temp;
                     var2[j]=temp2;
                 }
             }
